@@ -26,10 +26,12 @@ body {
   align-items: center;
   position: relative;
   height: 100%;
+  width: auto;
+  margin: auto;
 }
 
 .login-wrapper .box-col{
-  width: 50%;
+  width:100%;
   height: 100%;
   position: relative;
 }
@@ -41,15 +43,16 @@ body {
 }
 
 .login-wrapper .box-form{
-  padding: 20px;
   display: flex;
   height: 100%;
   align-items: center;
+  justify-content: center; /* Added */
   position: relative;
 }
 
+
 .login-wrapper .inner{
-  max-width: 800px;
+  max-width: 100%;
   margin: 20px;
 }
 
@@ -75,7 +78,8 @@ body {
 }
 
 .form-head .tagline{
-  width: 360px;
+  max-width: 360px;
+  width: 100%;
   color: rgba(14,14,14,1);
   position: relative;
   font-family: Poppins;
@@ -98,7 +102,8 @@ body {
 
 .form-group .form-control{
   display: flex;
-  width: 462px;
+  width: 100%;
+  max-width: 462px;
   padding: 14px 29px;
   align-items: flex-start;
   gap: 10px;
@@ -112,15 +117,6 @@ body {
 .form-group .form-control:focus{
   border-bottom: 2px solid #3d065d;
 }
-
-/* .form-button{
-  display: flex;
-  justify-content: space-between;
-}
-
-.check-action{
-  position: relative;
-} */
 
 .check-action .check{
   position: absolute;
@@ -170,8 +166,9 @@ body {
 
 .actions .btn-submit{
   display: flex;
-  width: 462px;
-  padding: 15px 204px;
+  width: 100%;
+  max-width: 462px;
+  padding: 15px;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -190,8 +187,9 @@ body {
 
 .actions .btn-google{
   display: flex;
-  width: 462px;
-  padding: 15px 204px;
+  max-width: 462px;
+  width: 100%;
+  padding: 15px;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
@@ -206,17 +204,6 @@ body {
   transition: .5s all ease;
 }
 
-/* .actions .btn-google .icon {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.actions .btn-google .icon img{
-  width: 20px;
-  height: 20px;
-  object-fit: contain;
-} */
-
 .form-bottom{
   display: flex;
   justify-content: space-between;
@@ -224,18 +211,20 @@ body {
 
 .divider{
   padding-top: 20px;
-  width:462px;
+  max-width: 462px;
+  width: 100%;
   padding-bottom: 30px;
 }
+
 .bottom-register{
- bottom: 20px;
- position: absolute;
- right: 0px;
- left: 0;
- text-align: center;
+  bottom: 20px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .login-wrapper {
     flex-direction: column;
   }

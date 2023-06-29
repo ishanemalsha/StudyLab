@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  color: #1A202C;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.link{
+  color: #0603ac;
+  text-decoration: none;
+}
+
+.link:hover{
+  text-decoration: underline;
+}
+
+.login-wrapper{
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+.login-wrapper .box-col{
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.login-wrapper .box-col img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login-wrapper .box-form{
+  padding: 20px;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  position: relative;
+}
+
+.login-wrapper .inner{
+  max-width: 800px;
+  margin: 20px;
+}
+
+.form-head .title{
+  color: #0F0F0F;
+  text-align: left;
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.form-head {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-bottom: 20px;
+}
+
+.logo {
+  margin-bottom: -10px;
+  width: 315px;
+  height: auto;
+}
+
+.form-head .tagline{
+  width: 360px;
+  color: rgba(14,14,14,1);
+  position: relative;
+  font-family: Poppins;
+  font-weight: Regular;
+  font-size: 25px;
+  padding-bottom: 40px;  
+}
+
+.form-group{
+  margin-bottom: 15px;
+}
+
+.forgot-pwd .link{
+  color: #0047FF;
+  text-align: center;
+  font-size: 15px;
+  font-family: Poppins;
+  font-weight: 500;
+}
+
+.form-group .form-control{
+  display: flex;
+  width: 462px;
+  padding: 14px 29px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid #D1D1D1;
+  background: #FFF;
+  font-size: 15px;
+  font-family: Poppins;
+}
+
+.form-group .form-control:focus{
+  border-bottom: 2px solid #3d065d;
+}
+
+/* .form-button{
+  display: flex;
+  justify-content: space-between;
+}
+
+.check-action{
+  position: relative;
+} */
+
+.check-action .check{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 0;
+}
+
+.check-action .name{
+  display: inline-block;
+}
+
+.check-action .name::before{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  content: "";
+  vertical-align: middle;
+  border: 1px solid #909194;
+  margin-right: 5px;
+  text-align: center;
+  font-size: 12px;
+  background-color: #fff;
+}
+
+.check-action .check:checked+.name::before{
+  color: #3d065d;
+  content: "\25CF";
+  border-color: #3d065d;
+}
+
+.actions{
+  margin-top: 20px;
+}
+
+.actions .btn{
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-family: Poppins;
+  font-weight: 600;
+  text-align: center;
+}
+
+.actions .btn-submit{
+  display: flex;
+  width: 462px;
+  padding: 15px 204px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid #7E59E6;
+  background: #7E59E6;
+  color: #FFF;
+}
+
+.actions .btn-submit:hover{
+  background-color: #571aff;
+  cursor: pointer;
+  border: #BEBEBE 1px solid;
+  transition: .5s all ease;
+}
+
+.actions .btn-google{
+  display: flex;
+  width: 462px;
+  padding: 15px 204px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #6159E6;
+  background: #F2F1FF;
+  display: flex;
+  color: #0F0F0F;
+}
+
+.actions .btn-google:hover{
+  box-shadow: #6059e672 0px 0px 20px;
+  transition: .5s all ease;
+}
+
+/* .actions .btn-google .icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.actions .btn-google .icon img{
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+} */
+
+.form-bottom{
+  display: flex;
+  justify-content: space-between;
+}
+
+.divider{
+  padding-top: 20px;
+  width:462px;
+  padding-bottom: 30px;
+}
+.bottom-register{
+ bottom: 20px;
+ position: absolute;
+ right: 0px;
+ left: 0;
+ text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .login-wrapper {
+    flex-direction: column;
+  }
+
+  .login-wrapper .box-col {
+    width: 100%;
+  }
+
+  .login-wrapper .box-form {
+    order: -1;
+    padding: 20px;
+  }
+}

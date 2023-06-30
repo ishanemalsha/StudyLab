@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Material CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/dashboard_style.css">
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src = "/img/Logo.png">
+                </div>
+                <div class="close" id="close-btn">
+                    <span class = "material-icons-round">close</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="#" class="active">
+                    <span class="material-icons-round">dashboard</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-round">person_outline</span>
+                    <h3>Students</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-round">auto_stories</span>
+                    <h3>Homework</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-round">payment</span>
+                    <h3>Payments</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-round">insights</span>
+                    <h3>Analytics</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-round">mail_outline</span>
+                    <h3>Messages</h3>
+                    <span class="message-count">26</span>
+                </a>
+                <a href="#">
+                    <span class="material-icons-round">report_gmailerrorred</span>
+                    <h3>Reports</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-round">add</span>
+                    <h3>Add Student</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-round">settings</span>
+                    <h3>Settings</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-round">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!-----------------  End Of Aside ----------------->
+        <main>
+            <h1>Dashboard</h1>
+            <div class="date"><input type="date"></div>
+            <div class="insights">
+        <!-----------------  Start Of Attendance Percentage ----------------->
+                <div class="attendance">
+                    <span class="material-icons-round">analytics</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Attendance</h3>
+                            <h1>122</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>82%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class ="text-muted">Last 24 Hours</small>
+                </div>
+        <!-----------------  End Of Attendance Percentage ----------------->
+
+        <!-----------------  Start Of Grade Percentage ----------------->
+                <div class="grade">
+                    <span class="material-icons-round">bar_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Grade</h3>
+                            <h1>83-122</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>71%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class ="text-muted">Last 24 Hours</small>
+                </div>
+        <!-----------------  End Of Grade Percentage ----------------->
+
+        <!-----------------  Start Of Fee Payment Percentage ----------------->
+                <div class="payment">
+                    <span class="material-icons-round">stacked_line_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Payments</h3>
+                            <h1>$9232.32</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>77%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class ="text-muted">Last 24 Hours</small>
+                </div>
+        <!-----------------  End Of Fee Payment Percentage ----------------->
+            </div>
+        <!-----------------  End Of Fee Insights ----------------->
+        <div class ="upcoming-classes">
+            <h2>Upcoming Classes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Class</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Physics</td>
+                        <td>Class 12-A</td>
+                        <td class="danger">03/07/2023</td>
+                        <td>09:30 AM</td>
+                        <td class ="primary">Details</td>
+                    </tr>
+                    <tr>
+                        <td>Biology</td>
+                        <td>Class 12-C</td>
+                        <td class="danger">03/07/2023</td>
+                        <td>11:00 AM</td>
+                        <td class ="primary">Details</td>
+                    </tr>
+                    <tr>
+                        <td>Computer Science</td>
+                        <td>Class 12-D</td>
+                        <td class="danger">04/07/2023</td>
+                        <td>08:30 AM</td>
+                        <td class ="primary">Details</td>
+                    </tr>
+                    <tr>
+                        <td>Physical Education</td>
+                        <td>Class 12-B</td>
+                        <td class="danger">05/07/2023</td>
+                        <td>10:30 AM</td>
+                        <td class ="primary">Details</td>
+                    </tr>
+                    <tr>
+                        <td>English Language</td>
+                        <td>Class 12-E</td>
+                        <td class="danger">05/07/2023</td>
+                        <td>12:00 AM</td>
+                        <td class ="primary">Details</td>
+                    </tr>
+                    <tr>
+                        <td>Business Studies</td>
+                        <td>Class 12-A</td>
+                        <td class="danger">06/07/2023</td>
+                        <td>09:30 AM</td>
+                        <td class ="primary">Details</td>
+                    </tr>
+                    <tr>
+                        <td>Psychology</td>
+                        <td>Class 12-C</td>
+                        <td class="danger">07/07/2023</td>
+                        <td>11:00 AM</td>
+                        <td class ="primary">Details</td>
+                    </tr>
+                
+                </tbody>
+            </table>
+            <a href="#">Show All</a>
+        </div>
+        </main>
+
+        <!---------------- End of main ----------------->
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-round">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons-round active">light_mode</span>
+                    <span class="material-icons-round">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Ishan</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="/img/Profile Image.png">
+                    </div>
+                </div>
+            </div>
+            <!------------------ End of top ----------------->
+            <div class="student-messages">
+                <h2>Messages</h2>
+                <div class="messages">
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="/img/Student Image 1.png">
+                        </div>
+                        <div class="message-text">
+                            <p><b>Olivia Johnson</b> Can I get clarification on...</p>
+                            <small class="text-muted">2 Minutes Ago</small>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="/img/Student Image 2.png">
+                        </div>
+                        <div class="message-text">
+                            <p><b>Emily Smith</b> Can you explain the concept...</p>
+                            <small class="text-muted">5 Minutes Ago</small>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="/img/Student Image 3.png">
+                        </div>
+                        <div class="message-text">
+                            <p><b>Daniel Wilson</b> I have a question about the...</p>
+                            <small class="text-muted">8 Minutes Ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!------------------ End of messages ----------------->
+            <div class="quick-view">
+                <h2>Quick View</h2>
+                <div class="widget">
+                    <div class="icon">
+                        <span class="material-icons-round">auto_stories</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Lesson Progress</h3>
+                            <small class="text-muted">Updated Last 24 Hours</small>
+                        </div>
+                        <h3 class="success sub">85%</h3>
+                        <h5 class="text-muted sub">Details</h5>
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="icon">
+                        <span class="material-icons-round">event</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Upcoming Events</h3>
+                            <small class="text-muted">Updated Within 1 Week</small>
+                        </div>
+                        <h3 class="warning sub">n/a</h3>
+                        <h5 class="text-muted sub">Details</h5>
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="icon">
+                        <span class="material-icons-round">crisis_alert</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Semester Exam In</h3>
+                            <small class="text-muted">Updated Last 24 Hours</small>
+                        </div>
+                        <h3 class="danger sub">7d</h3>
+                        <h5 class="text-muted sub">Details</h5>
+                    </div>
+                </div>
+                <div class="add-widgets">
+                    <div>
+                        <span class="material-icons-round">add</span>
+                        <h3>Add Widget</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./upcoming_classes.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

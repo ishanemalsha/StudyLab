@@ -2,7 +2,7 @@
 :root{
     --color-primary: #7E59E6;
     --color-danger: #FF687A;
-    --color-success:#53f3b0;
+    --color-success:#48dc9e;
     --color-warning:#FFCC68;
     --color-white:#fff;
     --color-info-dark: #928FBF;
@@ -585,11 +585,11 @@ main .upcoming-classes a{
         width: 83vw;
     }
 
-    main table thead tr th:last-child, main table thead tr th:first-child{
+    main .upcoming-classes table thead tr th:last-child, main .upcoming-classes table thead tr th:first-child{
         display: none;
     }
 
-    main table tbody tr td:last-child, main table tbody tr td:first-child{
+    main .upcoming-classes  table tbody tr td:last-child, main .upcoming-classes table tbody tr td:first-child{
         display: none;
     }
 
@@ -709,4 +709,47 @@ main .upcoming-classes a{
         font-size: 2rem;
     }
 
+}
+
+
+/* --------------------Payments---------------------- */
+
+main .payments{
+    margin-top: 1rem;   
+}
+
+main .payments h2{
+    margin-bottom: 0.8rem;
+}
+
+main .payments table{
+    background: var(--color-white);
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    text-align: left;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+main .payments table:hover{
+    box-shadow: none;
+}
+
+main .payments a{
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+    color: var(--color-primary);
+}
+
+/* ----------------- Media Queries Payment Table----------------- */
+
+@media screen and (max-width: 1200px) {
+    main .payments table thead tr th:nth-child(2),
+    main .payments table thead tr th:nth-child(3),
+    main .payments table tbody tr td:nth-child(2),
+    main .payments table tbody tr td:nth-child(3) {
+        display: none;
+    }
 }
